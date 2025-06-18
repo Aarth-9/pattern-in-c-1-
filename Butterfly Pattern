@@ -1,0 +1,25 @@
+z=int(input())
+for i in range(z):
+    for j in range(z):
+        if j<=i or i==j:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    for k in range(z):
+        if k>=(z-i-1):
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print("\n")
+for i in range(z-1):
+    for j in range(z):
+        if j<=(z-i-2):
+            print("*",end="")
+        else:
+            print(" ",end="")
+    for k in range(z):
+        if k<=i or i==k:
+            print(" ",end="")
+        else:
+            print("*",end="")
+    print("\n")
